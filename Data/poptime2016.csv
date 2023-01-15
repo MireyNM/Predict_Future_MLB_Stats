@@ -1,4 +1,4 @@
-﻿Year,catcher,player_id,team_id,age,maxeff_arm_2b_3b_sba,exchange_2b_3b_sba,pop_2b_sba_count,pop_2b_sba,pop_2b_cs,pop_2b_sb,pop_3b_sba_count,pop_3b_sba,pop_3b_cs,pop_3b_sb
+﻿year,catcher,player_id,team_id,age,maxeff_arm_2b_3b_sba,exchange_2b_3b_sba,pop_2b_sba_count,pop_2b_sba,pop_2b_cs,pop_2b_sb,pop_3b_sba_count,pop_3b_sba,pop_3b_cs,pop_3b_sb
 2016,Gary Sanchez,,147,23,88.4,0.72,20,1.9,1.9,1.9,0,,,
 2016,J.T. Realmuto,,146,25,87,0.7,32,1.91,1.92,1.9,1,1.46,,1.46
 2016,Welington Castillo,,109,29,83.3,0.67,23,1.92,1.92,1.9,7,1.57,1.53,1.62

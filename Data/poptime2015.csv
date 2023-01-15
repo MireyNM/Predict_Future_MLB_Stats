@@ -1,4 +1,4 @@
-﻿Year,catcher,player_id,team_id,age,maxeff_arm_2b_3b_sba,exchange_2b_3b_sba,pop_2b_sba_count,pop_2b_sba,pop_2b_cs,pop_2b_sb,pop_3b_sba_count,pop_3b_sba,pop_3b_cs,pop_3b_sb
+﻿year,catcher,player_id,team_id,age,maxeff_arm_2b_3b_sba,exchange_2b_3b_sba,pop_2b_sba_count,pop_2b_sba,pop_2b_cs,pop_2b_sb,pop_3b_sba_count,pop_3b_sba,pop_3b_cs,pop_3b_sb
 2015,Chris Stewart,,134,33,80,0.61,32,1.91,1.91,1.91,3,1.51,1.5,1.51
 2015,Christian Bethancourt,,144,23,89.5,0.72,12,1.89,1.92,1.88,1,1.72,1.72,
 2015,Martín Maldonado,,158,28,88.1,0.74,25,1.92,1.92,1.92,2,1.56,,1.56
