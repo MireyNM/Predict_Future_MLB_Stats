@@ -4,16 +4,16 @@
 
 CREATE TABLE "pitch_time_df" (
     "year" int   NOT NULL,
-    "last_Name" varchar   NOT NULL,
+    "last_Name" varchar NOT NULL,
     "first_name" varchar   NOT NULL,
-    "4_Seamer" numeric   NOT NULL,
-    "Sinker" numeric   NOT NULL,
-    "Cutter" numeric   NOT NULL,
-    "Slider" numeric   NOT NULL,
-    "Changeup" numeric   NOT NULL,
-    "Curve" numeric   NOT NULL,
-    "Splitter" numeric   NOT NULL,
-    "Knuckle" numeric   NOT NULL
+    "4_Seamer" numeric,
+    "Sinker" numeric,
+    "Cutter" numeric,
+    "Slider" numeric,
+    "Changeup" numeric,
+    "Curve" numeric,
+    "Splitter" numeric,
+    "Knuckle" numeric
 );
 
 CREATE TABLE "catcher_data_clean" (
