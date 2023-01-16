@@ -3,8 +3,8 @@
 
 
 CREATE TABLE "pitch_time_df" (
-    "Year" int   NOT NULL,
-    "Last_Name" varchar   NOT NULL,
+    "year" int   NOT NULL,
+    "last_Name" varchar   NOT NULL,
     "first_name" varchar   NOT NULL,
     "4_Seamer" int   NOT NULL,
     "Sinker" int   NOT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE "year" (
      )
 );
 
-ALTER TABLE "pitch_time_df" ADD CONSTRAINT "fk_pitch_time_df_Year" FOREIGN KEY("Year")
+ALTER TABLE "pitch_time_df" ADD CONSTRAINT "fk_pitch_time_df_year" FOREIGN KEY("year")
 REFERENCES "year" ("year");
 
 ALTER TABLE "catcher_data_clean" ADD CONSTRAINT "fk_catcher_data_clean_year" FOREIGN KEY("year")
