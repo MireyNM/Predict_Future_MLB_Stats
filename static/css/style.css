@@ -1,0 +1,13 @@
+.title{
+    color: #f7f7f7;
+}
+
+body {
+    color:darkgrey;
+}
+
+.jumbotron {
+    background-image: url("../images/Baseball_logo.svg.png");
+    background-size: 100% 100%;
+    text-align: center;
+}
