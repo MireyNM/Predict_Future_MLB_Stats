@@ -1,0 +1,48 @@
+.title{
+    color: #f5d7d7;
+}
+
+body {
+
+    color: white;
+    background-color: #1a2736;
+  }
+
+.jumbotron {
+    background-image: url("../images/test.png");
+    max-width: 100%;
+    height: 400px;
+    background-position: center;
+    color:white;
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+    
+}
+
+.subtitletron {
+    color:rgb(247, 243, 243);
+    background-color: transparent;
+    font-size: large;
+    text-align: left;
+  }
+
+/* unvisited link */
+a:link {
+    color: rgb(242, 234, 234);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }  
