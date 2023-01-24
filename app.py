@@ -14,9 +14,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-
 @app.route('/result', methods=['POST'])
 def getResults():
     data = request.json
     print(data)
+    print('test')
     return ('Base was stolen')
+

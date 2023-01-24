@@ -9,5 +9,7 @@ body {
 .jumbotron {
     background-image: url("../images/Baseball_logo.svg.png");
     background-size: 100% 100%;
+    max-width: 400;
+    
     text-align: center;
 }
