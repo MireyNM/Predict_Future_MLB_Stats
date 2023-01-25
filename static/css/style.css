@@ -3,13 +3,16 @@
 }
 
 body {
+    background-color: navy;
     color:darkgrey;
 }
 
 .jumbotron {
-    background-image: url("../images/Baseball_logo.svg.png");
+    background-image: url("../images/mlb.jpeg");
     background-size: 100% 100%;
-    max-width: 400;
-    
+    max-width: 100%;
+    height: 300px;
+    background-position: center;
+
     text-align: center;
 }
