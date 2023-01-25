@@ -1,5 +1,4 @@
-import './App.css'
+// import the data from data.js
+const tableData = data;
 
-import data from '../../Data/Clean_Data/next_war.js'
-const word = data.name;
-console.log(word); // output 'testing'
+console.log(tableData);
