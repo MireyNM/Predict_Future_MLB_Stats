@@ -1,12 +1,23 @@
+*{
+  margin:0; padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+body { 
+  min-height: 100vh;
+  /*background-color: #1a2736;*/
+  background: url(../images/test.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+
+/*
 .title{
     color: #f5d7d7;
 }
-
-body {
-
-    color: white;
-    background-color: #1a2736;
-  }
 
 .jumbotron {
     background-image: url("../images/test.png");
@@ -17,7 +28,6 @@ body {
     text-align: center;
     font-size: 40px;
     font-style: oblique;
-    
 }
 
 .subtitletron {
@@ -25,24 +35,145 @@ body {
     background-color: transparent;
     font-size: large;
     text-align: left;
+  }*/
+
+  header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgb(112, 162, 168);
+    box-shadow: 0 5px 10px rgba(17, 3, 3, 0.1);
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+   
   }
+
+header .logo{ 
+ font-weight: bolder;
+ font-size: 25px;
+ color: rgb(8, 7, 7);
+}
+
+header .navbar ul{
+  list-style: none;
+}
+
+header .navbar ul li{
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a{
+  font-size: 20px;
+  padding: 20px;
+  color: #1a2736; 
+  display: block;
+}
+
+header .navbar ul li ul{
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: rgb(106, 167, 174);
+  display: none;
+}
+
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid #1a2736;
+
+}
+
+header .navbar ul li ul li ul{
+  left: 200px;
+  top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+
+#menu-bar{
+  display: none;
+} 
+
+header label{
+  font-size: 20px;
+  color: #1a2736;
+  cursor: pointer;
+  display: none;
+}
+
+/* Background color when mouse over navbar */
+header .navbar ul li a:hover{
+  background: #1a2736;
+  color: aliceblue;
+}
+
 
 /* unvisited link */
 a:link {
-    color: rgb(242, 234, 234);
+    color: rgb(31, 29, 29);
   }
   
-  /* visited link */
-  a:visited {
-    color: green;
+/* visited link */
+a:visited {
+    color: rgb(17, 17, 17);
   }
   
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
+/* mouse over link */
+a:hover {
+  color: rgb(52, 76, 37);
   }
   
-  /* selected link */
-  a:active {
-    color: blue;
+/* selected link */
+a:active {
+    color: rgb(20, 156, 108);
   }  
+
+
+@media(max-width:991px){
+  header{
+    padding: 20px;
+  }
+
+  header label{
+    display: initial;
+  }
+
+  header .navbar{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background:  rgb(112, 162, 168);
+    border-top: 1px solid rgba(0,0,0,.1);
+    display: none;
+  }
+
+  header .navbar ul li{
+    width: 100%;
+  }
+
+  header .navbar ul li ul{
+    position: relative;
+    width: 100%;
+  }
+
+  header .navbar ul li ul li{
+    background: rgb(83, 118, 121) ;
+  }
+
+  header .navbar ul li ul li ul{
+    width: 100%;
+    left: 0;
+  }
+
+  #menu-bar:checked ~ .navbar{
+    display: initial ;
+  }
+ 
+
+
+}
