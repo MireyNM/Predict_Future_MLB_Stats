@@ -19,4 +19,4 @@
 Languages: Python, R
 Tools: Jupyter Notebook, R Studio
 Machine learning libraries: scikit-learn, TensorFlow, Keras
-Machine learning algorithms: decision trees, random forests, support vector machines, neural networks.
+Machine learning algorithms: linear regression.
