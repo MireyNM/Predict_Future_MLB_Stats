@@ -57,7 +57,7 @@ Figue 1 - Raw Data for batters from 2007 to 2022.
 Figue 2 - Raw Data for pitchers from 2007 to 2022.
 </p>
 
-Secondary data downloaded from https://baseballsavant.mlb.com/, This website provides a wide range of statistics and other relevant information about MLB players, including running speed measurements for runners, pitch speed measurements for pitchers, and pop time measurements for catchers. The data was downloaded in CSV format and used for the analysis phase of the project.
+Secondary data was downloaded from https://baseballsavant.mlb.com/, This website provides a wide range of statistics and other relevant information about MLB players, including running speed measurements for runners, pitch speed measurements for pitchers, and pop time measurements for catchers. The data was downloaded in CSV format and used for the analysis phase of the project.
 
 Other data was scraped from https://www.mlb.com/stats/, This website provides a wide range of statistics and other relevant information about MLB players, including detailed stats about players, teams and games. The team used web scraping techniques to collect a portion of the data from this website. The data includes information such as player's performance and statistics, teams statistics and games statistics.
 
