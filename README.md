@@ -2,6 +2,7 @@
 
 ## Table of Contents 
 * [Overview](#overview)
+* [Reason](#reason)
 * [Aim](#aim)
 * [Technologies](#technologies)
 * [Data Source](#data-source)
@@ -12,7 +13,10 @@
 * [Team Members](#team-members)
 
 ## Overview 
-In this project we are going to study Baseball data from 2007 till 2022 to predicts some important features which can help managers in making decisions and improve their team outcome. 
+In this project, we aim to utilize machine learning techniques to analyze baseball data from the period of 2007 to 2022. Our goal is to use this data to predict important features that can assist managers in making strategic decisions and ultimately improve their team's performance. To achieve this, we will gather and clean data from various sources, perform feature engineering, train and evaluate machine learning models, and analyze the results to identify key insights and patterns. Our findings can provide valuable information for coaches, managers and analysts in the baseball industry.
+
+## Reason
+The reason for working on this project is to develop a machine learning model that can accurately predict whether an MLB runner will be able to successfully steal 2nd or 3rd base based on their running speed, the pitcher's average pitch speed, and the catcher's pop time. This model could have practical applications for coaching and strategy decisions in baseball games, as well as for analyzing player performance and identifying potential areas for improvement. The team plans to use a variety of data sources and machine learning techniques to train and evaluate the model, and to explore the most important factors that influence base stealing success. The ultimate goal of this project is to provide valuable insights and tools for the baseball community.
 
 ## Aim
  The aim of our study is to:
@@ -53,6 +57,9 @@ Figue 1 - Raw Data for batters from 2007 to 2022.
 Figue 2 - Raw Data for pitchers from 2007 to 2022.
 </p>
 
+Secondary data downloaded from https://baseballsavant.mlb.com/, This website provides a wide range of statistics and other relevant information about MLB players, including running speed measurements for runners, pitch speed measurements for pitchers, and pop time measurements for catchers. The data was downloaded in CSV format and used for the analysis phase of the project.
+
+Other data was scraped from https://www.mlb.com/stats/, This website provides a wide range of statistics and other relevant information about MLB players, including detailed stats about players, teams and games. The team used web scraping techniques to collect a portion of the data from this website. The data includes information such as player's performance and statistics, teams statistics and games statistics.
 
 ## Data exploration
 
