@@ -7,6 +7,8 @@
     <title>Stealing_Bases_Project</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/autocomplete.css">
+
 </head>
 
 <body
@@ -51,36 +53,30 @@
                 <div class="row">
                     <div class="col-md-12 subtitletron "> 
                         <h2> Choose batter name in order to predict his VSR.</h2>
-                        <br>   <br>  
+                        <br>   <br>   
                       </div>
         
                  <!-- Main Input For Receiving Query to our ML -->
-                    <div class="col-md-3">
-                        <form class="bg-dark">
-
-                                <li class="bg-dark">
-                                    <label for="runner">Enter Batter Name</label>
-                                    <input type="text" class="filter" placeholder="Alfredo Amezaga" id="batter"/>
-                                </li>
-
-                                </br>
-                                </br>  
-                                    <button type="submit" class="btn btn-primary btn-block btn-large">Predict Batter WAR</button>
-                                <br>
-                                    {{predicted_value}}
-                                </br>
-                                </br> 
-                                </br>
-                                </br> 
-                            </ul>
-                           
-                        </form>
-                    </div>
+            <div class="col-md-3">
+                  <li class="bg-dark">
+                      <label for="runner">Enter Batter Name</label>
+                       <input type="text" class="filter" placeholder="Alfredo Amezaga" id="batterVSRName"/>
+                        </li>
+                        <br>  <br>  
+              </div>
+             
+             <!-- Click on the button to predict Next VSR for batters -->
+             <div class="col-md-3">    
+                 </br>                 
+                 <button class="btn btn-primary btn-block btn-large" onclick="getPredictedVSR()">Predict Batter VSR</button>
+                </div>
         
-                    <div class="col-md-4">
-                        We can put picture here
-        
-                    </div>
+            <div class="col-md-4">
+               
+                <h1 align "center" 
+
+                 id="VSRBATTResult" style="color:rgb(75, 95, 193)"> predicted_batter_VSR
+                </h1> 
                 </div>    
             
         </div>
@@ -101,7 +97,8 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
     <script src="../Data/Clean_Data/next_war.js"></script> 
     <script src="../static/js/main.js"></script>  
-     
+    <script src="../static/js/autocomplete.js"></script>  
+    <script src="../static/js/vsr.js"></script>  
 
 </body>
 
