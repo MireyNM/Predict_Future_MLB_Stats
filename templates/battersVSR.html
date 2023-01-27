@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
-<body> 
+<body
 
     
 <div class="container">
@@ -19,10 +19,10 @@
 
          <input type="checkbox" id="menu-bar"> 
          <label for="menu-bar">Menu</label>
-         
+      
         
 
-        <nav class="navbar">
+         <nav class="navbar">
             <ul>
                 <li> <a href="index.html">Home</a></li>
                 <li> <a href="stealingBase.html">Stealing Bases</a></li>
@@ -43,8 +43,53 @@
                 </li>
             </ul>
         </nav> 
-      </header>
-     </div>
+     </header>
+
+    <div class="container-fluid" id="main-content" style="background-color: rgb(222, 238, 241)">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 subtitletron "> 
+                        <h2> Choose batter name in order to predict his VSR.</h2>
+                        <br>   <br>  
+                      </div>
+        
+                 <!-- Main Input For Receiving Query to our ML -->
+                    <div class="col-md-3">
+                        <form class="bg-dark">
+
+                                <li class="bg-dark">
+                                    <label for="runner">Enter Batter Name</label>
+                                    <input type="text" class="filter" placeholder="Alfredo Amezaga" id="batter"/>
+                                </li>
+
+                                </br>
+                                </br>  
+                                    <button type="submit" class="btn btn-primary btn-block btn-large">Predict Batter WAR</button>
+                                <br>
+                                    {{predicted_value}}
+                                </br>
+                                </br> 
+                                </br>
+                                </br> 
+                            </ul>
+                           
+                        </form>
+                    </div>
+        
+                    <div class="col-md-4">
+                        We can put picture here
+        
+                    </div>
+                </div>    
+            
+        </div>
+
+              
+     
+    </div>
+
+</div>
       
     
     

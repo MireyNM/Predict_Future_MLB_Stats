@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stealing_Bases_Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body
+
+    
+<div class="container">
+
+    <header> 
+         <a href="index.html" class="logo">Baseball Stats</a>
+
+         <input type="checkbox" id="menu-bar"> 
+         <label for="menu-bar">Menu</label>
+      
+        
+
+         <nav class="navbar">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="stealingBase.html">Stealing Bases</a></li>
+                <li> <a href="#">VSR</a>
+                    <ul>
+                        <li> <a href="pitchersVSR.html">Pitchers VSR</a></li>
+                        <li> <a href="battersVSR.html">Batters VSR</a></li>
+                    </ul>
+                </li>
+                <li> <a href="previousgames.html">Previous Games</a></li>
+                <li> <a href="#">Contact us</a> 
+                    <ul>
+                    <li> <a href="contactMir.html" >Mireille Nehme</a></li>
+                    <li> <a href="contactNat.html">Nathalie Ouellette</a></li>
+                    <li> <a href="contactSam.html">Samuel Van Noppen</a></li>
+                    <li> <a href="contactWyat.html">Wyatt Baldwin</a></li>
+                </ul>  
+                </li>
+            </ul>
+        </nav> 
+     </header>
+
+    <div class="container-fluid" id="main-content" style="background-color: rgb(222, 238, 241)">
+        <div class="row">
+            <div class="col-md-12 subtitletron "> 
+                <h2> Choose pitcher, catcher and runner name in order to predict stealing base.</h2>
+                 <br>   <br>  
+             </div>
+        
+      <!-- Main Input For Receiving Query to our ML -->
+             <div class="col-md-3">
+                <form class="bg-dark">
+
+                    <ul class="bg-dark">
+                        <li class="bg-dark">
+                            <label for="catcher">Enter Catcher Name</label>
+                             <input type="text" name=" " class="filter" placeholder="Matt Thaiss" id="catcher"/>
+                         </li>
+                         </br>
+        
+                        <li class="bg-dark">
+                             <label for="pitcher">Enter Runner Name</label>
+                             <input type="text" class="filter" placeholder="Justin Varlander" id="pitcher"/>
+                        </li>
+                        </br>
+        
+                        <li class="bg-dark">
+                            <label for="runner">Enter Pitcher Name</label>
+                            <input type="text" class="filter" placeholder="CJ Abrams" id="runner"/>
+                            </li>
+                            </br>
+                            <button type="submit" class="btn btn-primary btn-block btn-large">Predict Stealing Base</button>
+                            
+                                </br> </br> 
+                    </ul>
+                           
+                        </form>
+                    </div>
+        
+                    <div class="col-md-4">
+                        Visualizations go here 
+        
+                    </div>
+                </div>
+        
+        </div>
+
+              
+     
+    </div>
+
+</div>
+      
+    
+    
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+    <script src="../Data/Clean_Data/next_war.js"></script> 
+    <script src="../static/js/main.js"></script>  
+     
+
+</body>
+
+</html>
