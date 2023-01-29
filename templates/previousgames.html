@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stealing_Bases_Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body
+
+    
+<div class="container">
+
+    <header> 
+         <a href="index.html" class="logo">Baseball Stats</a>
+
+         <input type="checkbox" id="menu-bar"> 
+         <label for="menu-bar">Menu</label>
+      
+        
+
+         <nav class="navbar">
+            <ul>
+                <li> <a href="/">Home</a></li>
+                <li> <a href="stealingBase.html">Stealing Bases</a></li>
+                <li> <a href="#">VSR</a>
+                    <ul>
+                        <li> <a href="pitchersVSR.html">Pitchers VSR</a></li>
+                        <li> <a href="battersVSR.html">Batters VSR</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">Previous Games</a></li>
+                <li> <a href="#">Contact us</a> 
+                    <ul>
+                    <li> <a href="/Mireille" >Mireille Nehme</a></li>
+                    <li> <a href="/Nathalie">Nathalie Ouellette</a></li>
+                    <li> <a href="/Sam">Samuel Van Noppen</a></li>
+                    <li> <a href="/Wyatt">Wyatt Baldwin</a></li>
+                </ul>  
+                </li>
+            </ul>
+        </nav> 
+     </header>
+
+    <div class="container-fluid" id="main-content" style="background-color: rgb(222, 238, 241)">
+        <div class="row equal-cols">
+            <div class="col-md-9">
+                <h3>Choose a game location and year to find its Data</h3>
+            </div>
+                </br>
+             <div class="col-md-3">
+                    <input type="text" class="filter" placeholder="NYY" id="city"/>
+             </div>
+            </br> 
+             <div class="col-md-3">
+                <input type="integer" class="filter" placeholder="2012" id="year"/>
+            </div>
+            </div>
+            
+
+            Result Table Should be here 
+        </div>
+
+              
+     
+    </div>
+
+</div>
+      
+    
+    
+
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+    <script src="../Data/Clean_Data/next_war.js"></script> 
+    <script src="../static/js/main.js"></script>  
+     
+
+</body>
+
+</html>

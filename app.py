@@ -17,7 +17,23 @@ with open('static/data/Clean_Data/next_war.js') as f:
 
 @app.route("/")
 def index():
-    return render_template('base.html')
+    return render_template('main.html')
+
+@app.route("/batterVSR")
+def batter():
+    return render_template('battersVSR.html')
+
+@app.route("/pitchersVSR")
+def pitcher():
+    return render_template('pitchersVSR.html')
+
+@app.route("/previousgames")
+def games():
+    return render_template('previousgames.html')
+
+@app.route("/stealingBase")
+def Base():
+    return render_template('stealingBase.html')
 
 @app.route('/result', methods=['POST'])
 def getResults():
@@ -31,7 +47,7 @@ def getResults():
     print(test_data)
     prediction = model.predict(np.array(test_data).reshape(1,-1))
     output = prediction[0]
-    return render_template("index.html", predicted_value=output)
+    return render_template("main.html", predicted_value=output)
     # return ('test')
 
 @app.route("/About")
