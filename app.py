@@ -19,6 +19,10 @@ with open('static/data/Clean_Data/next_war.js') as f:
 def index():
     return render_template('main.html')
 
+@app.route("/VSR")
+def vsr():
+    return render_template('vsr.html')
+
 @app.route("/batterVSR")
 def batter():
     return render_template('battersVSR.html')
@@ -50,7 +54,9 @@ def getResults():
     return render_template("main.html", predicted_value=output)
     # return ('test')
 
-@app.route("/About")
+@app.route("/contactUs")
+def contact():
+    return render_template('contact.html')
 
 @app.route("/Mireille")
 def Mireille():
