@@ -11,13 +11,13 @@ from flask import Flask, jsonify, render_template, request
 # flask run 
 # http://127.0.0.1:5000/
 app = Flask(__name__)
-with open('Data/Clean_Data/next_war.js') as f:
+with open('static/data/Clean_Data/next_war.js') as f:
     model = f.readlines()
     print("MODEL LOADED")
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template('base.html')
 
 @app.route('/result', methods=['POST'])
 def getResults():
@@ -33,6 +33,24 @@ def getResults():
     output = prediction[0]
     return render_template("index.html", predicted_value=output)
     # return ('test')
+
+@app.route("/About")
+
+@app.route("/Mireille")
+def Mireille():
+    return render_template('contactMir.html')
+
+@app.route("/Nathalie")
+def Nathalie():
+    return render_template('contactNat.html')
+
+@app.route("/Sam")
+def Sam():
+    return render_template('contactSam.html')
+
+@app.route("/Wyatt")
+def Wyatt():
+    return render_template('contactWyat.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
