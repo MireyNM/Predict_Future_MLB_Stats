@@ -1,0 +1,35 @@
+import numpy as np
+import pybaseball
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+# Load data from pybaseball
+data = pybaseball.statcast()
+
+# Filter data to only include catcher throws to 2nd or 3rd base
+data = data[data['fielder_2'].isin(['2B', '3B']) & (data['fielder_2.1'] == 'C')]
+
+# Select relevant features
+X = data[['release_speed', 'release_spin_rate', 'release_pos_x', 'release_pos_z', 'release_extension']]
+y = data['time_to_2nd_from_home']
+
+# Create a linear regression model and fit it to the data
+reg = LinearRegression().fit(X, y)
+
+# Get the situation input from the user
+situation = input("Enter the situation (1-10, with 10 being fastest and 1 being slowest): ")
+situation = int(situation)
+
+# Modify release_speed based on the situation input
+speed_factor = 1 + (situation - 5) * 0.1
+X['release_speed'] = X['release_speed'] * speed_factor
+
+# Predict the time it takes to throw the ball to 2nd base
+prediction = reg.predict(X)
+print("Predicted time to throw the ball to 2nd base:", prediction[0])
+
+# Repeat the same steps for the time to throw to 3rd base
+y = data['time_to_3rd_from_home']
+reg = LinearRegression().fit(X, y)
+prediction = reg.predict(X)
+print("Predicted time to throw the ball to 3rd base:", prediction[0])
