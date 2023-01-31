@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/autocomplete.css">
+
 </head>
 
 <body
@@ -45,63 +46,30 @@
             </ul>
         </nav> 
      </header>
-
      <div class="container-fluid" id="main-content" style="background-color: rgb(222, 238, 241)">
+        <h2 align="left">Choose BsR</h2>
         <div class="row">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 subtitletron "> 
-                        <h2> Choose pitcher name in order to predict his BsR.</h2>
-                        <br>   <br>  
-                      </div>
-        
-                 <!-- Main Input For Receiving Query to our ML -->
-                    <div class="col-md-3">
-                        <form class="bg-dark">
-
-                                <li class="bg-dark">
-                                    <label for="runner">Enter Pitcher Name</label>
-                                    <input type="text" class="filter" placeholder="Alfredo Amezaga" id="batter"/>
-                                </li>
-
-                                </br>
-                                </br>  
-                                    <button type="submit" class="btn btn-primary btn-block btn-large">Predict pitcher WAR</button>
-                                <br>
-                                    {{predicted_value}}
-                                </br>
-                                </br> 
-                                </br>
-                                </br> 
-                            </ul>
-                           
-                        </form>
-                    </div>
-        
-                    <div class="col-md-4">
-                        We can put picture here
-        
-                    </div>
-                </div>    
-            
+            <div class="col-md-6" style="background-color: rgb(163, 221, 233)">
+                <p align="left">
+                <h3>Pitcher BsR</h3>
+                <a href="/pitchersBsR" target="blank"><img align="center" src="../static/images/pitcher.webp" alt="mireille nehme" height="250" width="500"/></a>
+                </p>
+            </div>
+            <div class="col-md-6" style="background-color: rgb(163, 221, 233)">
+                <p align="left">
+                <h3>batter BsR</h3>
+                <a href="/batterBsR" target="blank"><img align="center" src="../static/images/batter.jpeg" alt="mireille nehme" height="250" width="500"/></a>
+                </p>
+            </div>
         </div>
-
-</div>
-      
-    
-    
-
-
-    
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
 <script src="/static/data/Clean_Data/next_war.js"></script> 
 <script src="/static/js/main.js"></script>  
 <script src="/static/js/autocomplete.js"></script>  
-<script src="/static/js/BsR.js"></script> 
+<script src="/static/js/BsR.js"></script>  
+      
      
-
 </body>
-
+     
 </html>

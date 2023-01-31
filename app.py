@@ -19,17 +19,17 @@ with open('static/data/Clean_Data/next_war.js') as f:
 def index():
     return render_template('main.html')
 
-@app.route("/VSR")
-def vsr():
-    return render_template('vsr.html')
+@app.route("/BsR")
+def BsR():
+    return render_template('BsR.html')
 
-@app.route("/batterVSR")
+@app.route("/batterBsR")
 def batter():
-    return render_template('battersVSR.html')
+    return render_template('battersBsR.html')
 
-@app.route("/pitchersVSR")
+@app.route("/pitchersBsR")
 def pitcher():
-    return render_template('pitchersVSR.html')
+    return render_template('pitchersBsR.html')
 
 @app.route("/previousgames")
 def games():

@@ -18,7 +18,6 @@ body {
 .title{
     color: #f5d7d7;
 }
-
 .jumbotron {
     background-image: url("../images/test.png");
     max-width: 100%;
@@ -29,7 +28,6 @@ body {
     font-size: 40px;
     font-style: oblique;
 }
-
 .subtitletron {
     color:rgb(247, 243, 243);
     background-color: rgb(17, 17, 17);
