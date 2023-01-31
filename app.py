@@ -6,10 +6,15 @@ import numpy as np
 import pandas as pd
 from flask import Flask, jsonify, render_template, request
 
-# env | grep FLASK
-# export FLASK_APP=app.py
-# flask run 
-# http://127.0.0.1:5000/
+# First run code in terminal
+## env | grep FLASK
+# Run code: connect flask app with file app.py
+## export FLASK_APP=app.py
+# Run code: launch website
+## flask run 
+# Website link
+## http://127.0.0.1:5000/
+
 app = Flask(__name__)
 with open('static/data/Clean_Data/next_war.js') as f:
     model = f.readlines()
