@@ -9,127 +9,49 @@
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
-<body>
-    <nav class="navbar">
-        <div class="brand-title">Stealing Bases</div>
-        <a href="http://127.0.0.1:5000/" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
+<body> 
+
+    
+<div class="container">
+
+    <header> 
+         <a href="index.html" class="logo">Baseball Stats</a>
+
+         <input type="checkbox" id="menu-bar"> 
+         <label for="menu-bar">Menu</label>
+         
+        
+
+        <nav class="navbar">
             <ul>
-                <li><a href="http://127.0.0.1:5000/">Offensive</a></li>
-                <li><a href="http://127.0.0.1:5000/result">Defensive</a></li>
-                <li><a href="http://127.0.0.1:5000/">About</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 jumbotron text-center">
-            </div>
-        </div>
-
-        <div class="col-md-12 subtitletron "> 
-            <h2> Choose pitcher name and batter name in order to get baseball predictions.</h2>
-            <br>   <br>  
-          </div>
-
-
-    <div class="container-fluid">
-        <div class="row">
-
-         <!-- Main Input For Receiving Query to our ML -->
-            <div class="col-md-3">
-                <form class="bg-dark">
-                    <p>Baseball senario</p>
-
-                    <ul class="bg-dark">
-                        <li class="bg-dark">
-                            <label for="catcher">Enter Catcher</label>
-                            <input type="text" name=" " class="filter" placeholder="Matt Thaiss" id="catcher"/>
-                        </li>
-                        </br>
-
-                        <li class="bg-dark">
-                            <label for="pitcher">Enter Runner</label>
-                            <input type="text" class="filter" placeholder="Justin Varlander" id="pitcher"/>
-                        </li>
-                        </br>
-
-                        <li class="bg-dark">
-                            <label for="runner">Enter Pitcher Name</label>
-                            <input type="text" class="filter" placeholder="CJ Abrams" id="runner"/>
-                        </li>
-                        </br>
-                            <button type="submit" class="btn btn-primary btn-block btn-large">Predict Pitcher WAR</button>
-                         </br>
-                            {{predicted_value}}
-
-                         </br>
-                         </br>
-                        <li class="bg-dark">
-                            <label for="runner">Enter Batter Name</label>
-                            <input type="text" class="filter" placeholder="Alfredo Amezaga" id="batter"/>
-                        </li>
-                        </br>
-                        </br>  
-                            <button type="submit" class="btn btn-primary btn-block btn-large">Predict Batter WAR</button>
-                        <br>
-                            {{predicted_value}}
-                        </br>
-                        </br> 
-                        </br>
-                        </br> 
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="stealingBase.html">Stealing Bases</a></li>
+                <li> <a href="#">VSR</a>
+                    <ul>
+                        <li> <a href="pitchersVSR.html">Pitchers VSR</a></li>
+                        <li> <a href="battersVSR.html">Batters VSR</a></li>
                     </ul>
-                   
-                </form>
-            </div>
-
-            <div class="col-md-4">
-                We can put some visualizations
-
-            </div>
-        </div>
-
-
-        <div class="container-fluid">
-            <div class="row equal-cols">
-                <div class="col-md-7" style="background-color: rgb(146, 203, 212)">
-                    <h3>Choose a game location and year to find its Data</h3>
-                </div>
-                
-
-             <div class="col-md-3" style="background-color: rgb(146, 203, 212)">
-                    <input type="text" class="filter" placeholder="NYY" id="city"/>
-             </div>
-
-            
-
-             <div class="col-md-3" style="background-color: rgb(146, 203, 212)">
-                <input type="integer" class="filter" placeholder="2012" id="year"/>
-            </div>
-            </div>
-                
-           
-
-             </br>
-             </br> 
-             </br>
-             </br>            
-
-        </div>
-
+                </li>
+                <li> <a href="previousgames.html">Previous Games</a></li>
+                <li> <a href="#">Contact us</a> 
+                    <ul>
+                    <li> <a href="contactMir.html" >Mireille Nehme</a></li>
+                    <li> <a href="contactNat.html">Nathalie Ouellette</a></li>
+                    <li> <a href="contactSam.html">Samuel Van Noppen</a></li>
+                    <li> <a href="contactWyat.html">Wyatt Baldwin</a></li>
+                </ul>  
+                </li>
+            </ul>
+        </nav> 
+      </header>
      </div>
 
-
-    </div>
-    <div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>  
-    <script src="../static/js/main.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+    <script src="../Data/Clean_Data/next_war.js"></script> 
+    <script src="../static/js/main.js"></script>  
+     
+
 </body>
 
 </html>
