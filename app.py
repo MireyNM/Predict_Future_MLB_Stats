@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 from flask import Flask, jsonify, render_template, request
 
+# First run code
 # env | grep FLASK
 # export FLASK_APP=app.py
 # flask run 
