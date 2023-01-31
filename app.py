@@ -1,36 +1,78 @@
-# to load the data
+import os 
 import pickle
-
-# For the Flask app
+from cProfile import run
+import datetime as dt
 import numpy as np
-from flask import Flask, request, jsonify, render_template
+import pandas as pd
+from flask import Flask, jsonify, render_template, request
 
+# env | grep FLASK
+# export FLASK_APP=app.py
+# flask run 
+# http://127.0.0.1:5000/
 app = Flask(__name__)
-model = pickle.load(open('model.pkl','rb'))
-print("MODEL LOADED")
+with open('static/data/Clean_Data/next_war.js') as f:
+    model = f.readlines()
+    print("MODEL LOADED")
 
-@app.route('/')
-def main():
-    return render_template("index.html")
+@app.route("/")
+def index():
+    return render_template('main.html')
 
-@app.route('/predict', methods=['POST'])
-def predict():
-    
+@app.route("/VSR")
+def vsr():
+    return render_template('vsr.html')
+
+@app.route("/batterVSR")
+def batter():
+    return render_template('battersVSR.html')
+
+@app.route("/pitchersVSR")
+def pitcher():
+    return render_template('pitchersVSR.html')
+
+@app.route("/previousgames")
+def games():
+    return render_template('previousgames.html')
+
+@app.route("/stealingBase")
+def Base():
+    return render_template('stealingBase.html')
+
+@app.route('/result', methods=['POST'])
+def getResults():
+    # data = request.json
     test_data = []
-    features = ['Pregnancies','Glucose','BloodPressure',
-    'SkinThickness','Insulin','BMI',
-    'DiabetesPedigreeFunction','Age'] 
-    # getting input from HTML form
+    features = ['Name']
     for feature in features:
         test_data.append(request.form.get(feature))
-    print('VALUES RECEIVED FROM THE HTML FORM')
-    #All data preprocessing steps should appear here
+    print('Values received from the html form')
+
     print(test_data)
     prediction = model.predict(np.array(test_data).reshape(1,-1))
     output = prediction[0]
-    print(f'PREDICTED {output}')
-    #final_value = jsonify(output)
-    return render_template("index.html",predicted_value=output)
+    return render_template("main.html", predicted_value=output)
+    # return ('test')
+
+@app.route("/contactUs")
+def contact():
+    return render_template('contact.html')
+
+@app.route("/Mireille")
+def Mireille():
+    return render_template('contactMir.html')
+
+@app.route("/Nathalie")
+def Nathalie():
+    return render_template('contactNat.html')
+
+@app.route("/Sam")
+def Sam():
+    return render_template('contactSam.html')
+
+@app.route("/Wyatt")
+def Wyatt():
+    return render_template('contactWyat.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
