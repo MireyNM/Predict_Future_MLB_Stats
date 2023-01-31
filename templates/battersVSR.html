@@ -28,10 +28,10 @@
             <ul>
                 <li> <a href="/">Home</a></li>
                 <li> <a href="/stealingBase">Stealing Bases</a></li>
-                <li> <a href="/VSR">VSR</a>
+                <li> <a href="/BsR">batterBsR</a>
                     <ul>
-                        <li> <a href="/pitchersVSR">Pitchers VSR</a></li>
-                        <li> <a href="/batterVSR">Batters VSR</a></li>
+                        <li> <a href="/pitchersBsR">Pitchers BsR</a></li>
+                        <li> <a href="/batterBsR">Batters BsR</a></li>
                     </ul>
                 </li>
                 <li> <a href="/previousgames">Previous Games</a></li>
@@ -52,7 +52,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 subtitletron "> 
-                        <h2> Choose batter name in order to predict his VSR.</h2>
+                        <h2> Choose batter name in order to predict his BsR.</h2>
                         <br>   <br>   
                       </div>
         
@@ -60,22 +60,22 @@
             <div class="col-md-3">
                   <li class="bg-dark">
                       <label for="runner">Enter Batter Name</label>
-                       <input type="text" class="filter" placeholder="Alfredo Amezaga" id="batterVSRName"/>
+                       <input type="text" class="filter" placeholder="Alfredo Amezaga" id="batterBsRName"/>
                         </li>
                         <br>  <br>  
               </div>
              
-             <!-- Click on the button to predict Next VSR for batters -->
+             <!-- Click on the button to predict Next BsR for batters -->
              <div class="col-md-3">    
                  </br>                 
-                 <button class="btn btn-primary btn-block btn-large" onclick="getPredictedVSR()">Predict Batter VSR</button>
+                 <button class="btn btn-primary btn-block btn-large" onclick="getPredictedBsR()">Predict Batter BsR</button>
                 </div>
         
             <div class="col-md-4">
                
                 <h1 align "center" 
 
-                 id="VSRBATTResult" style="color:rgb(75, 95, 193)"> predicted_batter_VSR
+                 id="BsRBATTResult" style="color:rgb(75, 95, 193)"> predicted_batter_BsR
                 </h1> 
                 </div>    
             
@@ -98,7 +98,7 @@
     <script src="/static/data/Clean_Data/next_war.js"></script> 
     <script src="/static/js/main.js"></script>  
     <script src="/static/js/autocomplete.js"></script>  
-    <script src="/static/js/vsr.js"></script>  
+    <script src="/static/js/BsR.js"></script>  
 
 </body>
 
