@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stealing_Bases_Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/autocomplete.css">
+
+</head>
+
+<body
+
+    
+<div class="container">
+
+    <header> 
+         <a href="/" class="logo">Baseball Stats</a>
+
+         <input type="checkbox" id="menu-bar"> 
+         <label for="menu-bar">Menu</label>
+      
+        
+
+         <nav class="navbar">
+            <ul>
+                <li> <a href="/">Home</a></li>
+                <li> <a href="/stealingBase">Stealing Bases</a></li>
+                <li> <a href="/Stats">Stats</a>
+                    <ul>
+                        <li> <a href="/pitchersWAR">Pitchers WAR</a></li>
+                        <li> <a href="/batterBsR">Batters BsR</a></li>
+                    </ul>
+                </li>
+                <li> <a href="/previousgames">Previous Games</a></li>
+                <li> <a href="/contactUs">Contact us</a> 
+                    <ul>
+                    <li> <a href="/Mireille" >Mireille Nehme</a></li>
+                    <li> <a href="/Nathalie">Nathalie Ouellette</a></li>
+                    <li> <a href="/Sam">Samuel Van Noppen</a></li>
+                    <li> <a href="/Wyatt">Wyatt Baldwin</a></li>
+                </ul>  
+                </li>
+            </ul>
+        </nav> 
+     </header>
+     <div class="container-fluid" id="main-content" style="background-color: rgb(222, 238, 241)">
+        <h2 align="left">Choose BsR</h2>
+        <div class="row">
+            <div class="col-md-6" style="background-color: rgb(163, 221, 233)">
+                <p align="left">
+                <h3>Pitcher BsR</h3>
+                <a href="/pitchersBsR" target="blank"><img align="center" src="../static/images/pitcher.webp" alt="mireille nehme" height="250" width="500"/></a>
+                </p>
+            </div>
+            <div class="col-md-6" style="background-color: rgb(163, 221, 233)">
+                <p align="left">
+                <h3>batter BsR</h3>
+                <a href="/batterBsR" target="blank"><img align="center" src="../static/images/batter.jpeg" alt="mireille nehme" height="250" width="500"/></a>
+                </p>
+            </div>
+        </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+<script src="/static/data/Clean_Data/next_BsR_batt.js"></script> 
+<script src="/static/js/main.js"></script>  
+<script src="/static/js/autocomplete.js"></script>  
+<script src="/static/js/bsr.js"></script>  
+      
+     
+</body>
+     
+</html>

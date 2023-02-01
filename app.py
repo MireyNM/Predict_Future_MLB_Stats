@@ -16,7 +16,7 @@ from flask import Flask, jsonify, render_template, request
 ## http://127.0.0.1:5000/
 
 app = Flask(__name__)
-with open('static/data/Clean_Data/next_war.js') as f:
+with open('static/data/Clean_Data/next_BsR_batt.js') as f:
     model = f.readlines()
     print("MODEL LOADED")
 
@@ -24,17 +24,17 @@ with open('static/data/Clean_Data/next_war.js') as f:
 def index():
     return render_template('main.html')
 
-@app.route("/BsR")
-def BsR():
-    return render_template('BsR.html')
+@app.route("/Stats")
+def Stats():
+    return render_template('Stats.html')
 
 @app.route("/batterBsR")
 def batter():
     return render_template('battersBsR.html')
 
-@app.route("/pitchersBsR")
+@app.route("/pitchersWAR")
 def pitcher():
-    return render_template('pitchersBsR.html')
+    return render_template('pitchersWAR.html')
 
 @app.route("/previousgames")
 def games():
