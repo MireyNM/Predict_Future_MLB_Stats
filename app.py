@@ -16,7 +16,7 @@ from flask import Flask, jsonify, render_template, request
 ## http://127.0.0.1:5000/
 
 app = Flask(__name__)
-with open('static/data/Clean_Data/next_war.js') as f:
+with open('static/data/Clean_Data/next_BsR_batt.js') as f:
     model = f.readlines()
     print("MODEL LOADED")
 
