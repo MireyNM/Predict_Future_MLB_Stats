@@ -1,0 +1,1 @@
+Plotly.newPlot("lineChart", [1,2,3,4])
