@@ -1,10 +1,10 @@
 // import the data from next_BsR_batt.js
 const tableData = data;
-console.log(tableData)
+// console.log(tableData)
 
 // import the data from next_war.js
 const tableDataWar = data_war;
-console.log(tableDataWar)
+// console.log(tableDataWar)
 
 // Reference the HTML table using d3
 // var tbody = d3.select("tbody");

@@ -30,7 +30,7 @@
                 <li> <a href="/stealingBase">Stealing Bases</a></li>
                 <li> <a href="/Stats">Stats</a>
                     <ul>
-                        <li> <a href="/pitchersBsR">Pitchers BsR</a></li>
+                        <li> <a href="/pitchersWAR">Pitchers BsR</a></li>
                         <li> <a href="/batterBsR">Batters BsR</a></li>
                     </ul>
                 </li>
@@ -78,16 +78,17 @@
                  id="BsRBATTResult" style="color:rgb(75, 95, 193)"> predicted_batter_BsR
                 </h1> 
             </div>
-            <div class="col-md-4">
-                <div id="lineGraph">
-
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 subtitletron">
+                        <h4>graph for input</h4>
+                        <div id="lineGraph"></div>
+                    </div>
                 </div>
+
             </div>
             
-        </div>
-
-              
-     
+        </div>      
     </div>
 
 </div>
@@ -101,9 +102,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
     <script src="/static/data/Clean_Data/next_BsR_batt.js"></script> 
+    <script src="/static/data/Clean_Data/next_war.js"></script>
     <script src="/static/js/main.js"></script>  
     <script src="/static/js/autocomplete.js"></script>  
+    <script src="/static/js/chart.js"></script>
     <script src="/static/js/bsr.js"></script>  
+ 
 
 </body>
 
