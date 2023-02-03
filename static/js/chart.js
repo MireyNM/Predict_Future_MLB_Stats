@@ -16,8 +16,8 @@ function plotData(data) {
 
     var lineLayout = {
         title: "Batters' prediction",
-        xaxis: "Years",
-        yaxis: "BsR"
+        xaxis: {title: "Seasons"},
+        yaxis: {title: "BsR"}
 
     }
 
