@@ -8,9 +8,15 @@ data = pybaseball.statcast()
 # Filter data to only include catcher throws to 2nd or 3rd base
 data = data[data['fielder_2'].isin(['2B', '3B']) & (data['fielder_2.1'] == 'C')]
 
+# Check the shape of the filtered data
+print("Filtered data shape:", data.shape)
+
 # Select relevant features
 X = data[['release_speed', 'release_spin_rate', 'release_pos_x', 'release_pos_z', 'release_extension']]
 y = data['time_to_2nd_from_home']
+
+# Check the shape of the feature matrix
+print("Feature matrix shape:", X.shape)
 
 # Create a linear regression model and fit it to the data
 reg = LinearRegression().fit(X, y)
