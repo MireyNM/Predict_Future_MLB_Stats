@@ -16,7 +16,7 @@ In this project we are going to study Baseball data from 2007 till 2022 to predi
 ## Aim
  The aim of our study is to:
 * Build a machine learning model to predict whether an MLB runner will be able to successfully steal a base based on various aspects.  
-* Build a ridge regression linear model to predict next BsR number (Base Running) for  batters. 
+* Build a ridge regression linear model to predict next BsR number (Base Running) for batters. 
 * Build a ridge regression linear model to predict next WAR number (Wins Above Replacement) for pitchers 
 * Visualize models' prediction on a webpage.
 * (Visualize previous baseball games)
@@ -35,7 +35,7 @@ The data was imported using `pybaseball` package, a Python package for baseball 
 We used `from pybaseball import batting_stats` to import all batters stats, `from pybaseball import pitching_stats` to import all pitchers stats and `pybaseball schedule_and_record` to visualize the games.
 
 ### Data Cleaning 
-In order to create batters DataFrame (See Table 1) we have chose games from 2007 to 2022 where the number of players' appearances is at least 200 times per year. 
+To create batters DataFrame (See Table 1) we have chose games from 2007 to 2022 where the number of players' appearances is at least 200 times per year. 
 To create pitchers DataFrame (See Table 2) we have chose games from 2007 to 2022 for pitchers who have pitched 50+ innings. </br>
 </br>
 Finally, the data was stored on local database. 
@@ -62,22 +62,22 @@ Bsr or Base running is the base running component of WAR at FanGraphs. It's a nu
 To predict the next BsR number for each batter we have trained a linear regression ridge model. 
 
 **Data** </br>
-We have used batters stats from 2007 to 2022 (See Table 1). These data has 5090 rows and 320 columns. </br>
+We have used batter’s stats from 2007 to 2022 (See Table 1). These data has 5090 rows and 320 columns. </br>
 
-**Pre processing Data for Model** </br>
+**Preprocessing Data for Model** </br>
 * We have removed all players who played in 1 season only.
-* We have wrote a function that takes BsR value from previous year and add it to a new column `Next_BsR` in order to create the dependent variable.
+* We have written a function that takes BsR value from previous year and add it to a new column `Next_BsR` to create the dependent variable.
 * We have cleaned the data by removing all columns with null values and some object data types columns. Finally, we have dummified the `team_code` column by assigning code number instead of name to each team. This has reduced the DataFrame to 4127 rows and 195 columns.
 
 **Train Ridge Regression Model** </br>
 * We have initialized the model.
-* We have used sequential features selector `SequentialFeatureSelector` in order to find the best features for the model. The number of features selected was 20. 
-* We have split the data usine `TimeSeriesSplit` to make sure we are using previous data in order to predict future one.
+* We have used sequential features selector `SequentialFeatureSelector` to find the best features for the model. The number of features selected was 20. 
+* We have split the data using `TimeSeriesSplit` to make sure we are using previous data in order to predict future one.
 * We have scaled the data using `MinMaxScaler`
 * In order to iterate the model through all years we have created a function that will go through each year, assign train data as all previous years and test data as current year. The output of this function is a DataFrame of actual and predicted BsR numbers. 
 
 **Evaluate the model** </br>
-In order to evalute the model we have calculated the following: 
+To evaluate the model we have calculated the following: 
 * Mean absolute error (MAE) = 1.89
 * Mean squared error (MSE) = 5.96
 * Square root of Mean squared error (RMSE) = 2.44
@@ -110,16 +110,13 @@ Table 4 - Model evaluation used to predict Next_WAR
 </p>
 
 
-
 ## Challenges
 We faced multiple challenges during this project:
-* Finding the rigt data: Even if there's plenty of available free data for baseball finding the right one was challenging and it took us time to find the `pybaseball` package
-* Optimizing the linear ridge regression model: While we were able to predict accuractly the next BsR and WAR numbers for some players, the predicton for others was so far from actual values.  t Therefore, some players could be miscategorized as BsR and WAR numbers would drop in case of injury but players will appear in less games and this model is only taking pitchers who have pitched 50+ innings and batters that appeared in at least 200 times per year. Moreover, we have started by studying data from 2007 to 2022 we added more data (2002 till 2022) for BsR prediction but we couldn't do the same for WAR predictions as the `pybaseball` package for pitchers stopped loading. 
-* The need to relearn from previous modules and impliment into the project in a short period of time. This can be using PG admin to create the database, and the flask app to launch the server for the website.
-
+* Finding the rigt data: Even if there's plenty of available free data for baseball finding the right one was challenging, and it took us time to find the `pybaseball` package
+* Optimizing the linear ridge regression model: While we were able to predict accuractly the next BsR and WAR numbers for some players, the predicton for others was so far from actual values.  t Therefore, some players could be miscategorized as BsR and WAR numbers would drop in case of injury, but players will appear in less games and this model is only taking pitchers who have pitched 50+ innings and batters that appeared in at least 200 times per year. Moreover, we have started by studying data from 2007 to 2022 we added more data (2002 till 2022) for BsR prediction, but we couldn't do the same for WAR predictions as the `pybaseball` package for pitchers stopped loading. 
 
 ## Summary 
-At the end of this project we were able to create a webpage where user can navigate among multiple webpages in order to:
+At the end of this project, we were able to create a webpage where user can navigate among multiple webpages in order to:
 * Check whether an MLB runner will be able to successfully steal a base based on various aspects () 
 * Insert a batter's name in order to predict his next BsR number (Base Running).
 * Insert a pitcher's name in order to predict his next WAR number (Wins Above Replacement). 
@@ -130,3 +127,6 @@ At the end of this project we were able to create a webpage where user can navig
 * <a href="https://github.com/nathalieouellette"> Nathalie Ouellette </a>
 * <a href="https://github.com/wyattbaldwin"> Wyatt Baldwin </a>
 * <a href="https://github.com/samuelvannoppen"> Samuel Van Noppen </a>
+
+
+
