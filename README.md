@@ -62,8 +62,18 @@ Figue 2 - Raw Data for pitchers from 2007 to 2022.
 ## Analysis 
 
 ## Challenges
+One of the challenges that we have come across is components of the project is in previous modules that we have to relearn and impliment into the project in a short period of time. This can be using PG admin to create the database, and the flask app to launch the server for the website.
 
 ## Results 
+For base running (BsR), 
+
+For wins against replacement (WAR),
+
+For the running splits, 
+
+For the catcher, 
+
+## Recommendations
 
 ## Summary 
 
