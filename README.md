@@ -15,7 +15,7 @@ The collected data will be used to train and evaluate the machine learning model
 ## Technologies and Tools
 The following technologies, languages, tools, and algorithms will be used in this project:
 
-## Languages:
+### Languages:
 Tools: Jupyter Notebook, R Studio
 Machine learning libraries: scikit-learn, TensorFlow, Keras, pybaseball
 Machine learning algorithms: linear regression, ARIMA
