@@ -3,7 +3,7 @@
 // console.log(tableData)
 
 // import the data from next_war.js
-const tableDataWar = data_war;
+// const tableDataWar = data_war;
 // console.log(tableDataWar)
 
 
