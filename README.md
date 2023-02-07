@@ -13,7 +13,7 @@ Data was analyzed to gain a better understanding of its characteristics and iden
 The data was used to train and evaluate three machine learning models:
 
 - ARIMA model to predict the number of stolen bases in 2023
-- Linear regression model to predict the time it takes for a runner to reach second or third base based on lead off distance and their known running times, as well as a - linear regression model to predict the time it takes for the catcher to throw the ball.
+- Linear regression model to predict the time it takes for a runner to reach second or third base based on lead off distance and their known running times, as well as a linear regression model to predict the time it takes for the catcher to throw the ball.
 
 ## Technologies and Tools
 The following technologies, languages, tools, and algorithms were used in this project:
