@@ -18,10 +18,11 @@ The data was used to train and evaluate three machine learning models:
 ## Technologies and Tools
 The following technologies, languages, tools, and algorithms were used in this project:
 
-Languages: Python
-Tools: Jupyter Notebook
-Machine learning libraries: scikit-learn, TensorFlow, Keras, pybaseball, BeautifulSoup
-Machine learning algorithms: ARIMA, linear regression, interpolation
+Languages: Python<br>
+Tools: Jupyter Notebook, Visual Studio Code<br>
+Mathamatical algorithms: interpolation<br>
+Machine learning libraries: scikit-learn, TensorFlow, Keras, pybaseball, BeautifulSoup<br>
+Machine learning algorithms: ARIMA, linear regression
 
 ## Conclusion
 This project developed two machine learning models to predict the number of stolen bases in MLB in 2023 and the time it takes for a runner to reach second or third base. The models use various inputs including runner's running speed, pitcher's average pitch speed, catcher's pop time, lead off distance, and catcher's throw time. The results of these models could be useful for coaching and strategy decisions during games and for analyzing player performance.
