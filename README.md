@@ -19,7 +19,7 @@ The data was used to train and evaluate three machine learning models:
 The following technologies, languages, tools, and algorithms were used in this project:
 
 Languages: Python
-Tools: Jupyter Notebook, R Studio
+Tools: Jupyter Notebook
 Machine learning libraries: scikit-learn, TensorFlow, Keras, pybaseball, BeautifulSoup
 Machine learning algorithms: ARIMA, linear regression, interpolation
 
