@@ -1,4 +1,4 @@
-# Stealing_Bases_Project
+# Predicting Future Major League Baseball Stats
 
 ## Table of Contents 
 * [Overview](#overview)
@@ -112,7 +112,7 @@ Table 4 - Model evaluation used to predict Next_WAR
 
 ## Challenges
 We faced multiple challenges during this project:
-* Finding the rigt data: Even if there's plenty of available free data for baseball finding the right one was challenging, and it took us time to find the `pybaseball` package
+* Finding the right data: Even if there's plenty of available free data for baseball finding the right one was challenging, and it took us time to find the `pybaseball` package
 * Optimizing the linear ridge regression model: While we were able to predict accuractly the next BsR and WAR numbers for some players, the predicton for others was so far from actual values.  t Therefore, some players could be miscategorized as BsR and WAR numbers would drop in case of injury, but players will appear in less games and this model is only taking pitchers who have pitched 50+ innings and batters that appeared in at least 200 times per year. Moreover, we have started by studying data from 2007 to 2022 we added more data (2002 till 2022) for BsR prediction, but we couldn't do the same for WAR predictions as the `pybaseball` package for pitchers stopped loading. 
 
 ## Summary 
