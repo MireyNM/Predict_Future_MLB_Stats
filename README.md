@@ -10,7 +10,7 @@ Data was collected from various sources such as baseball statistics databases, t
 Data was analyzed to gain a better understanding of its characteristics and identify any patterns or trends through summarization, visualization, and checking for missing or incomplete data.
 
 ## Model Development
-The data was used to train and evaluate two machine learning models:
+The data was used to train and evaluate three machine learning models:
 
 - ARIMA model to predict the number of stolen bases in 2023
 - Linear regression model to predict the time it takes for a runner to reach second or third base based on lead off distance and their known running times, as well as a - linear regression model to predict the time it takes for the catcher to throw the ball.
