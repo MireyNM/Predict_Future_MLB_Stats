@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="../static/css/autocomplete.css">
 </head>
 
-<body
-
+<body>
+<script src="/static/data/Clean_Data/next_war.js"></script>
+<script>
+    const WARData = data_war
+</script>
     
 <div class="container">
 
@@ -51,42 +54,46 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 subtitletron "> 
-                        <h2> Choose pitcher name in order to predict his BsR.</h2>
+                        <h2> Choose pitcher name in order to predict his WAR.</h2>
                         <br>   <br>  
                       </div>
         
                  <!-- Main Input For Receiving Query to our ML -->
                     <div class="col-md-3">
-                        <form class="bg-dark">
-
-                                <li class="bg-dark">
-                                    <label for="runner">Enter Pitcher Name</label>
-                                    <input type="text" class="filter" placeholder="Alfredo Amezaga" id="batter"/>
-                                </li>
-
-                                </br>
-                                </br>  
-                                    <button type="submit" class="btn btn-primary btn-block btn-large">Predict pitcher WAR</button>
-                                <br>
-                                    {{predicted_value}}
-                                </br>
-                                </br> 
-                                </br>
-                                </br> 
-                            </ul>
-                           
-                        </form>
+                        <li class="bg-dark">
+                            <label for="runner">Enter Pitcher Name</label>
+                            <input type="text" class="filter" placeholder="Alfredo Amezaga" id="pitcherName"/>
+                        </li>
+                        <br>
+                        <br>
                     </div>
-        
-                    <div class="col-md-4">
-                        We can put picture here
-        
-                    </div>
-                </div>    
-            
-        </div>
-
-</div>
+                    <!-- Click on the button to predict next WAR for pitchers -->
+                    <div class="col-md-3">    
+                    </br>                 
+                    <button class="btn btn-primary btn-block btn-large" onclick="getPredictedWAR()">Predict Pitcher WAR</button>
+                   </div>
+           
+               <div class="col-md-4">
+                  
+                   <h1 align "center" 
+   
+                    id="pitcherResult" style="color:rgb(75, 95, 193)"> Predicted Pitcher WAR
+                   </h1> 
+               </div>
+               <div class="container-fluid">
+                   <div class="row">
+                       <div class="col-md-12 subtitletron">
+                           <h4>graph for input</h4>
+                           <div id="lineGraph"></div>
+                       </div>
+                   </div>
+   
+               </div>
+               
+           </div>      
+       </div>
+   
+   </div>
       
     
     
@@ -96,10 +103,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
-<script src="/static/data/Clean_Data/next_BsR_batt.js"></script>
 <script src="/static/js/main.js"></script>  
 <script src="/static/js/autocomplete.js"></script>  
-<script src="/static/js/BsR.js"></script> 
+<script src="/static/js/chart.js"></script>
+<script src="/static/js/war.js"></script> 
+ 
      
 
 </body>

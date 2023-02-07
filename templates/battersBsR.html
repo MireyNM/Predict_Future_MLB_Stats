@@ -11,8 +11,11 @@
 
 </head>
 
-<body
-
+<body>
+    <script src="/static/data/Clean_Data/next_BsR_batt.js"></script> 
+    <script>
+        const tableData = data
+    </script>
     
 <div class="container">
 
@@ -30,7 +33,7 @@
                 <li> <a href="/stealingBase">Stealing Bases</a></li>
                 <li> <a href="/Stats">Stats</a>
                     <ul>
-                        <li> <a href="/pitchersBsR">Pitchers BsR</a></li>
+                        <li> <a href="/pitchersWAR">Pitchers WAR</a></li>
                         <li> <a href="/batterBsR">Batters BsR</a></li>
                     </ul>
                 </li>
@@ -60,9 +63,9 @@
             <div class="col-md-3">
                   <li class="bg-dark">
                       <label for="runner">Enter Batter Name</label>
-                       <input type="text" class="filter" placeholder="Alfredo Amezaga" id="batterBsRName"/>
-                        </li>
-                        <br>  <br>  
+                       <input type="text" class="filter" placeholder="Alfredo Amezaga" id="playerName"/>
+                    </li>
+                    <br>  <br>  
               </div>
              
              <!-- Click on the button to predict Next BsR for batters -->
@@ -75,14 +78,20 @@
                
                 <h1 align "center" 
 
-                 id="BsRBATTResult" style="color:rgb(75, 95, 193)"> predicted_batter_BsR
+                 id="Result" style="color:rgb(75, 95, 193)"> Predicted Batter BsR
                 </h1> 
-                </div>    
-            
-        </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 subtitletron">
+                        <h4>graph for input</h4>
+                        <div id="lineGraph"></div>
+                    </div>
+                </div>
 
-              
-     
+            </div>
+            
+        </div>      
     </div>
 
 </div>
@@ -95,10 +104,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
-    <script src="/static/data/Clean_Data/next_BsR_batt.js"></script> 
+    <script src="/static/data/Clean_Data/next_war.js"></script>
     <script src="/static/js/main.js"></script>  
     <script src="/static/js/autocomplete.js"></script>  
+    <script src="/static/js/chart.js"></script>
     <script src="/static/js/bsr.js"></script>  
+ 
 
 </body>
 
