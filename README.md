@@ -125,6 +125,10 @@ To visualize our predictions, we took the following steps (See Video below):
 
 
 
+https://user-images.githubusercontent.com/109363759/217385847-191f4e0f-d059-40af-931b-e5c92135e97f.mp4
+
+
+
 
 ## Challenges
 We faced multiple challenges during this project:
