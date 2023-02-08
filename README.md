@@ -6,7 +6,7 @@
 * [Technologies](#technologies)
 * [Data](#data)
 * [Analysis](#analysis)
-*[Visualization](#visualization) 
+* [Visualization](#visualization) 
 * [Challenges](#challenges)
 * [Summary](#summary)
 * [Team Members](#team-members)
